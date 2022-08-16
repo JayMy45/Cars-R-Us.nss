@@ -19,19 +19,15 @@ export const CarsRUs = () => {
 
         <article class="choices">
             <section class="choices__colors options">
-                <h2>Colors</h2>
                 ${paintColors()}
             </section>
             <section class="interiors options">
-                <h2>Interiors</h2>
                 ${interiorOptions()}
             </section>
             <section class="technology options">
-                <h2>Dashboard</h2>
                 ${dashBoardTechnology()}
             </section>
             <section class="Wheels options">
-                <h2>Wheels</h2>
                 ${wheelStyle()}
             </section>
         </article>

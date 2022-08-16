@@ -10,8 +10,9 @@ const colors = getPaintColor();
 
 export const paintColors = () => {
     //define variable equal to empty string to hold/build html string
-    let html = `<select id="color">
-    <option value="0">Make a Color Selection...</option>`
+    let html = `<h2>Colors</h2>`
+    html += `<select id="color">`
+    html += `<option value="0">Make a Color Selection...</option>`
 
 
     //use .map() for converting objects to <li> elements

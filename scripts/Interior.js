@@ -10,8 +10,10 @@ const interiors = getInterior();
 
 export const interiorOptions = () => {
     //define variable equal to empty string to hold/build html string
-    let html = `<select id="interior">
-    <option value="0">Make a Interior Selection...</option>`
+    let html = `<h2>Interior</h2>`
+
+    html += `<select id="interior">`
+    html += `<option value="0">Make a Interior Selection...</option>`
 
 
     //use .map() for converting objects to <li> elements
