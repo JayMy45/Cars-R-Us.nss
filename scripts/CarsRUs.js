@@ -1,5 +1,8 @@
 //import htmlBuildingFunctions needed various modules
 import { paintColors } from "./PaintColor.js"
+import { interiorOptions } from "./Interior.js"
+import { dashBoardTechnology } from "./Technology.js"
+import { wheelStyle } from "./Wheels.js"
 
 
 document.addEventListener(
@@ -19,13 +22,17 @@ export const CarsRUs = () => {
                 <h2>Colors</h2>
                 ${paintColors()}
             </section>
-            <section class="choices__sizes options">
-                <h2>Sizes</h2>
-        
+            <section class="interiors options">
+                <h2>Interiors</h2>
+                ${interiorOptions()}
             </section>
-            <section class="choices__styles options">
-                <h2>Styles</h2>
-     
+            <section class="technology options">
+                <h2>Dashboard</h2>
+                ${dashBoardTechnology()}
+            </section>
+            <section class="Wheels options">
+                <h2>Wheels</h2>
+                ${wheelStyle()}
             </section>
         </article>
 
