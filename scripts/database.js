@@ -88,14 +88,14 @@ export const setWheel = (id) => {
 // }
 
 /*this function should be invoked, in this case, whenever the button to create a new order is clicked (put in clickEventListner on HTML page)
-it takes the user inputs from creating a car/order and adds a new id and timestamp and a copy of the users inputs then 
+it takes the user inputs from creating a car/order and adds a new id and timestamp then makes a copy of the users inputs then 
 pushes it into customOrders object.  Then the orderBuilder is cleared... */
 export const addCustomOrder = () => {
     const newOrder = { ...database.orderBuilder }
     const lastIndex = database.customOrder.length - 1
     newOrder.id = database.customOrder[lastIndex].id + 1
     newOrder.timestamp = Date.now()
-    database.customOrders.push(newOrder)
+    database.customOrder.push(newOrder)
     database.orderBuilder = {}
     document.dispatchEvent(new CustomEvent("stateChanged"))
 

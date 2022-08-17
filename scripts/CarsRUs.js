@@ -4,6 +4,7 @@ import { interiorOptions } from "./Interior.js"
 import { dashBoardTechnology } from "./Technology.js"
 import { wheelStyle } from "./Wheels.js"
 import { Order } from "./Orders.js"
+import { addCustomOrder } from "./database.js"
 
 document.addEventListener(
     "click",
