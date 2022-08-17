@@ -4,5 +4,16 @@
     border: 1px dashed dodgerblue;
     padding: 1rem;
     border-radius: 0.5rem;
+    width: 15em;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+}
+
+.choices__1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choices__2 {
+    display: flex;
+    justify-content: space-around;
 }

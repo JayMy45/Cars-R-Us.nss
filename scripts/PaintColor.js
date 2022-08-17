@@ -23,7 +23,7 @@ export const paintColors = () => {
 
 
     //use .map() for converting objects to <li> elements
-    //declare new function within this function that will return <li> tag dropboxes
+    //declare new function within this function that will return <li> tag dropbox
     const listItems = colors.map(color => {
 
         return `

@@ -25,6 +25,7 @@ export const CarsRUs = () => {
             <section class="interiors options">
                 ${interiorOptions()}
             </section>
+            <article class="choices">
             <section class="technology options">
                 ${dashBoardTechnology()}
             </section>

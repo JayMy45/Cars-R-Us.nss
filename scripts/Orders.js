@@ -45,7 +45,7 @@ const buildOrderListItem = (order) => {
         style: "currency",
         currency: "USD"
     })
-    return `<li>Order #${order.id} will cost ${costString}.</li>`
+    return `<li id="orderString">Order #${order.id} will cost ${costString}.</li>`
 
 }
 
@@ -55,7 +55,7 @@ export const Order = () => {
     const orders = getOrders();
 
     //declare a variable equal to empty string
-    let html = '<h2>Custom Jewelry Orders</h2>'
+    let html = '<h2 class="customJewelry">Custom Jewelry Orders</h2>'
 
 
     //iterate customOrders Object to access information using new way

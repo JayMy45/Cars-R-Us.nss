@@ -34,9 +34,9 @@ const database = {  //if database is named something else it will have to be inc
         {
             id: 1,
             colorId: 1,
-            interiorId: 2,
-            techId: 3,
-            wheelId: 3,
+            interiorId: 1,
+            techId: 1,
+            wheelId: 1,
             timestamp: 1660748097
         }
     ],
