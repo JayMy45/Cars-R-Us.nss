@@ -1,8 +1,15 @@
 //import getPaintColors function from database...
-import { getPaintColor } from "./database.js";
+import { getPaintColor, setPaintColor } from "./database.js";
 
 //invoke and store function in variable "colors"
 const colors = getPaintColor();
+
+document.addEventListener("change",
+    (event) => {
+        if (event.target.id === "color") {
+            setPaintColor(parseInt(event.target.value))
+        }
+    })
 
 //this module will provide paint color options and allow user to toggle through drop-down box to make choices then
 //the choices will be exported to html located in CarsRUs Module...

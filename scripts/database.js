@@ -38,7 +38,9 @@ const database = {  //if database is named something else it will have to be inc
             techId: 3,
             wheelId: 3
         }
-    ]
+    ],
+
+    orderBuilder: {}
 
 }
 
@@ -62,3 +64,24 @@ export const getOrders = () => {
     return database.customOrder.map(customOrder => ({ ...customOrder }))
 }
 
+//export functions whose responsibility is to set state...
+export const setPaintColor = (id) => {  //parameter to import "id" from to function...
+    database.orderBuilder.colorId = id
+}  /* the setMetal function adds a new key "metalId" equal to id using dot.method to 
+    add to the orderBuilder key/object in the database ObjectArray */
+
+export const setInterior = (id) => {
+    database.orderBuilder.interiorId = id
+}
+
+export const setTechnology = (id) => {
+    database.orderBuilder.techId = id
+}
+
+export const setWheel = (id) => {
+    database.orderBuilder.wheelId = id
+}
+
+// export const setOrders = (id) => {
+//     database.orderBuilder.interiorId = id
+// }
