@@ -34,7 +34,7 @@ const database = {  //if database is named something else it will have to be inc
         {
             id: 1,
             colorId: 1,
-            interiorId: 4,
+            interiorId: 2,
             techId: 3,
             wheelId: 3,
             timestamp: 1660748097
@@ -87,20 +87,26 @@ export const setWheel = (id) => {
 //     database.orderBuilder.interiorId = id
 // }
 
-/*this function should be invoked, in this case, whenever the button to create a new order is clicked (put in clickEventListner on HTML page)
+/*this function should be invoked, in this case, whenever the button to create a new order is clicked (put in clickEventListener on HTML page)
 it takes the user inputs from creating a car/order and adds a new id and timestamp then makes a copy of the users inputs then 
 pushes it into customOrders object.  Then the orderBuilder is cleared... */
+
+//customOrder = [{id: 1},{id: 2}]
+//                 [o]      [1]
+//to get the right index subtract 1 from the total length of index (2 in this example) then use the calculated index to target the right object to update .id.
+
+
 export const addCustomOrder = () => {
     const newOrder = { ...database.orderBuilder }
-    const lastIndex = database.customOrder.length - 1
-    newOrder.id = database.customOrder[lastIndex].id + 1
+    const lastIndex = database.customOrder.length - 1 //see above explanation
+    newOrder.id = database.customOrder[lastIndex].id + 1 //index provide is offset by 1 because index count starts at 0
     newOrder.timestamp = Date.now()
     database.customOrder.push(newOrder)
     database.orderBuilder = {}
     document.dispatchEvent(new CustomEvent("stateChanged"))
 
-    /* There are a number of parts to this function that span to difference modules (main.js & carsRUs.js [already discribed above]).
-        in the main.js module an eventListener is added to listen for the customEvent "stateChanged". The customeEvent "stateChange"
+    /* There are a number of parts to this function that span to difference modules (main.js & carsRUs.js [already described above]).
+        in the main.js module an eventListener is added to listen for the customEvent "stateChanged". The customEvent "stateChange"
         is dispatched whenever the button to create a new order is clicked...which means after the button is clicked then the above function is 
         called...at the end the main.js function below is dispatched rendering a new page
         
