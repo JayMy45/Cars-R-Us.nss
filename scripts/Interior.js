@@ -29,7 +29,9 @@ export const interiorOptions = () => {
 
         return `
         <option value = "${interior.id}"> ${interior.type}</option>`
-    })
+    })                     /*this is where the id in the eventListner is located. At the moment
+                            it is a string; therefore, it needs to be parseInt into an integer to update 
+                            the id as an integer.*/
 
     html += listItems.join("")
     html += `</select > `
