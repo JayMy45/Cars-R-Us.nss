@@ -3,7 +3,7 @@ import { paintColors } from "./PaintColor.js"
 import { interiorOptions } from "./Interior.js"
 import { dashBoardTechnology } from "./Technology.js"
 import { wheelStyle } from "./Wheels.js"
-
+import { Order } from "./Orders.js"
 
 document.addEventListener(
     "click",
@@ -37,8 +37,7 @@ export const CarsRUs = () => {
         </article>
 
         <article class="customOrders">
-            <h2>Custom Jewelry Orders</h2>
-
+            ${Order()}
         </article>
     `
 }

@@ -36,7 +36,7 @@ const database = {  //if database is named something else it will have to be inc
             colorId: 1,
             interiorId: 4,
             techId: 3,
-            wheelId: 3
+            wheelId: 3,
             timestamp: 1660748097
         }
     ],

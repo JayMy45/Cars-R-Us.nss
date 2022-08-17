@@ -24,7 +24,7 @@ export const dashBoardTechnology = () => {
 
 
     //use .map() for converting objects to <li> elements
-    //declare new function within this function that will return <li> tag dropboxes
+    //declare new function within this function that will return <li> tag dropbox
     const listItems = dashBoards.map(dashBoard => {
 
         return `
