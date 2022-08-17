@@ -17,10 +17,10 @@ const database = {  //if database is named something else it will have to be inc
     ],
 
     technology: [
-        { id: 1, type: "Basic Package (basic sound system)", price: 500 },
-        { id: 2, type: "Navigation Package (includes integrated navigation controls)", price: 845 },
-        { id: 3, type: "Visibility Package (includes side and rear cameras)", price: 1200 },
-        { id: 4, type: "Ultra Package (includes navigation and visibility packages)", price: 1575 }
+        { id: 1, type: "Basic Package", details: " basic sound system", price: 500 },
+        { id: 2, type: "Navigation Package", details: "includes integrated navigation controls", price: 845 },
+        { id: 3, type: "Visibility Package", details: "includes side and rear cameras", price: 1200 },
+        { id: 4, type: "Ultra Package", details: "includes navigation and visibility packages", price: 1575 }
     ],
 
     wheels: [

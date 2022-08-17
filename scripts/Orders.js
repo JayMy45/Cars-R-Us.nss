@@ -45,7 +45,7 @@ const buildOrderListItem = (order) => {
         style: "currency",
         currency: "USD"
     })
-    return `<li id="orderString">Order #${order.id} will cost ${costString}.</li>`
+    return `<div class="orderBorder">Order #${order.id} will cost ${costString}.</div>`
 
 }
 

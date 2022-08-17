@@ -36,3 +36,10 @@ ul {
     color: lightgoldenrodyellow;
     font-size: 1rem;
 }
+
+.choices__1,
+.choices__2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+}
