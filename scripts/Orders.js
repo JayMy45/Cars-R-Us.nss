@@ -1,6 +1,8 @@
 import { getOrders, getPaintColor, getInterior, getTechnology, getWheels } from "./database.js";
 
 //define variable to store invoked functions imported above.
+
+//These functions can be invoked in or out of the buildOrderListItem function...
 const paintColors = getPaintColor()
 const interiors = getInterior()
 const technologies = getTechnology()
@@ -13,6 +15,7 @@ const wheels = getWheels()
 
 
 const buildOrderListItem = (order) => {
+
 
     const foundPaintColor = paintColors.find( //foundPaintColor is the object now...
         (color) => {  //(color) is the the iterator
