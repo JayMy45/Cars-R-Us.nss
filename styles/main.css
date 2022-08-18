@@ -32,17 +32,22 @@ ul {
 #orderButton {
     margin: 1rem 0 2rem 2rem;
     padding: 0.5rem;
-    background-color: rgb(227, 72, 72);
-    color: lightgoldenrodyellow;
+    background-color: rgba(46, 92, 31, 0.765);
+    color: rgba(250, 250, 210, 0.739);
     font-size: 1rem;
 }
+
+
 
 .choices__1,
 .choices__2 {
     display: flex;
     justify-content: space-evenly;
-    margin: 2%;
+    align-items: center;
+    align-content: center;
+    margin: .5%;
     padding: 1rem;
+    flex-basis: 3;
 
 }
 

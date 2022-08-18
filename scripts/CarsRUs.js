@@ -19,7 +19,7 @@ export const CarsRUs = () => {
         <h1 class="carsRUs">Kneel Diamonds</h1>
 
         <article class="choices">
-        <div class="choices__1">
+        <div class="choices-item choices__1">
             <section class="choices__colors options">
                 ${paintColors()}
             </section>
@@ -28,7 +28,7 @@ export const CarsRUs = () => {
             </section>
         </div>
 
-        <div class="choices__2">
+        <div class="choices-item choices__2">
             <section class="technology options">
                 ${dashBoardTechnology()}
             </section>

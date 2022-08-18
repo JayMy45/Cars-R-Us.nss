@@ -49,7 +49,7 @@ const buildOrderListItem = (order) => {
     })
 
 
-    return `<div class="orderBorder">${foundPaintColor.type} car with ${foundWheels.type} wheels, ${foundInterior.type} interior and the ${foundTechnology.type} for a cost of ${costString}.</div>`
+    return `<div class="orderBorder">Custom Order #${order.id}:  <em><u>${foundPaintColor.type}</u></em> colored car with <em><u>${foundWheels.type}</u></em> wheels, <em><u>${foundInterior.type}</u></em> interior and the <em><u>${foundTechnology.type}</u></em> for a cost of <strong>${costString}</strong>.</div>`
 
 }
 
@@ -59,7 +59,7 @@ export const Order = () => {
     const orders = getOrders();
 
     //declare a variable equal to empty string
-    let html = '<h2 class="customJewelry">Custom Jewelry Orders</h2>'
+    let html = '<h2 class="customJewelry">Custom Car Orders</h2>'
 
     //iterate customOrders Object to access information using new way
     //this function returns an array...

@@ -4,13 +4,14 @@
     border: 1px dashed dodgerblue;
     padding: 1rem;
     border-radius: 0.5rem;
-    width: 20rem;
+    width: 300px;
+    background-color: rgb(188, 206, 188);
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
 }
 
 .orderBorder {
-    border: 2px dotted black;
-    background-color: lightblue;
+    border: 2px dotted rgb(150, 18, 18);
+    background-color: rgb(217, 222, 224);
     padding: 2%;
     margin: 5px;
 }
