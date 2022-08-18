@@ -14,9 +14,9 @@ const wheels = getWheels()
 
 const buildOrderListItem = (order) => {
 
-    const foundPaintColor = paintColors.find(
-        (color) => {
-            return color.id === order.colorId
+    const foundPaintColor = paintColors.find( //foundPaintColor is the object now...
+        (color) => {  //(color) is the the iterator
+            return color.id === order.colorId //this is a condition the function specifically returns but the function is much more.
         }
     )
 
