@@ -40,6 +40,12 @@ ul {
 .choices__1,
 .choices__2 {
     display: flex;
-    justify-content: space-around;
-    margin: 10%;
+    justify-content: space-evenly;
+    margin: 2%;
+    padding: 1rem;
+
+}
+
+.carsRUs {
+    text-align: center;
 }

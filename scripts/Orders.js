@@ -38,14 +38,15 @@ const buildOrderListItem = (order) => {
         }
     )
 
-
     const totalCost = foundPaintColor.price + foundInterior.price + foundTechnology.price + foundWheels.price
 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
     })
-    return `<div class="orderBorder">Order #${order.id} will cost ${costString}.</div>`
+
+
+    return `<div class="orderBorder">${foundPaintColor.type} car with ${foundWheels.type} wheels, ${foundInterior.type} interior and the ${foundTechnology.type} for a cost of ${costString}.</div>`
 
 }
 
@@ -57,12 +58,10 @@ export const Order = () => {
     //declare a variable equal to empty string
     let html = '<h2 class="customJewelry">Custom Jewelry Orders</h2>'
 
-
     //iterate customOrders Object to access information using new way
     //this function returns an array...
     const listItemArray = orders.map(buildOrderListItem)
     // orders.map(order => { return `<h3>Order #${order.id} placed on ${order.timestamp}</h3>`})
-
     html += listItemArray.join("")  //function creates a string from the array created by listItemArray.
     html += `</ul>`
     return html

@@ -16,7 +16,7 @@ document.addEventListener(
 
 export const CarsRUs = () => {
     return `
-        <h1>Kneel Diamonds</h1>
+        <h1 class="carsRUs">Kneel Diamonds</h1>
 
         <article class="choices">
         <div class="choices__1">
